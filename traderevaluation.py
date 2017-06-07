@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 
 
-rawCSVData="/home/boma/risktestdata.csv"
+rawCSVData="risktestdata.csv"
 
 rawDf=pd.read_csv(rawCSVData)
 
@@ -23,3 +23,7 @@ del rawDf['Item']
 del rawDf['Ticket']
 
 print rawDf
+
+
+# build up the training dataset and the model size is 14x14
+
