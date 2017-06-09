@@ -9,6 +9,9 @@ raw_df=ut.get_raw_df(rawCSVData)
 
 # build up the training dataset and the model size is 13x13
 
-matrix14=raw_df.r
+matrix13=raw_df.head(13)
 
-print matrix14
+print matrix13.as_matrix()
+
+
+

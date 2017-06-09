@@ -17,7 +17,7 @@ def get_raw_df(raw_file_path):
             rawDf.loc[i,'Type']=0
         else :
             rawDf.loc[i,'Type']=1
-        rawDf.loc[i,'StayTime']=(ut.get_time_stamp(rawDf.loc[i,'Close Time'])-ut.get_time_stamp(rawDf.loc[i,'Open Time']))/1000
+        rawDf.loc[i,'StayTime']=(get_time_stamp(rawDf.loc[i,'Close Time'])-get_time_stamp(rawDf.loc[i,'Open Time']))/1000
 
 
     "Omit the symbol column"
